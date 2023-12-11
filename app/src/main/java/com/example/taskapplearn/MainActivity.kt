@@ -14,5 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view.binding.root)
         presenter=PresenterMainActivity(view,ModelMainActivity(activity = this))
         presenter.onCreate()
+
+
     }
 }
