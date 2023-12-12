@@ -1,4 +1,4 @@
-package com.example.taskapplearn
+package com.example.taskapplearn.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

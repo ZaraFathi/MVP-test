@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TaskAppLearn</string>
+    <string name="txt_1">تسک سنج</string>
+    <string name="txt_2">بااپلیکیشن تسک سنج کارهاتومدیریت کن</string>
+    <string name="img2_txt">img2_txt</string>
+    <string name="text2_txt">text2_txt</string>
+    <string name="text1_txt">text1_txt</string>
+    <string name="mange_task">مدیریت وظایف</string>
+    <string name="true_work">کارهای انجام شده</string>
+    <string name="false_work">کارهای انجام نشده</string>
+    <string name="todo">todo</string>
+
+
 </resources>

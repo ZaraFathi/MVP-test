@@ -6,9 +6,11 @@ import android.widget.FrameLayout
 import com.example.taskapplearn.databinding.ActivityMainBinding
 
 class ViewMainActivity (
-    contextInstance: Context
+    contextInstance:Context
 ) :FrameLayout(contextInstance) {
 
+
     val binding =
+
         ActivityMainBinding.inflate(LayoutInflater.from(context))
 }
