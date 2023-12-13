@@ -1,6 +1,8 @@
 package com.example.taskapplearn.mvp.presenter
 
+import com.example.taskapplearn.db.dao.TaskEntity
 import com.example.taskapplearn.mvp.ext.BaseLifeCycle
+import com.example.taskapplearn.mvp.ext.OnBindData
 import com.example.taskapplearn.mvp.model.ModelMainActivity
 import com.example.taskapplearn.mvp.view.ViewMainActivity
 
@@ -12,7 +14,13 @@ class PresenterMainActivity (
         setNewTask()
     }
     private fun setNewTask(){
-        view.showDialog()
+        view.showDialog(
+            object :OnBindData{
+                override fun saveData(taskEntity: TaskEntity) {
+                   model.setData(taskEntity)
+                }
+            }
+        )
 
     }
 }

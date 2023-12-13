@@ -9,6 +9,8 @@ import android.widget.FrameLayout
 import android.widget.Toast
 import com.example.taskapplearn.databinding.ActivityMainBinding
 import com.example.taskapplearn.databinding.CustomDialogBinding
+import com.example.taskapplearn.db.dao.TaskEntity
+import com.example.taskapplearn.mvp.ext.OnBindData
 
 class ViewMainActivity (
     contextInstance:Context
@@ -16,7 +18,7 @@ class ViewMainActivity (
 
     val binding =
         ActivityMainBinding.inflate(LayoutInflater.from(context))
-    fun showDialog(){
+    fun showDialog(onBindData: OnBindData){
         binding.fab.setOnClickListener {
             val view =CustomDialogBinding.inflate(LayoutInflater.from(context))
             val dialog = Dialog(context)
@@ -29,7 +31,7 @@ class ViewMainActivity (
             view.btnSave.setOnClickListener {
                 val text = view.edtTask.text.toString()
                 if(text.isNotEmpty()) {
-                    //save to detabase
+                    onBindData.saveData(TaskEntity(0,text,false))
                 }else
                       Toast.makeText(context,"لطفا وظیفه را واردکنید",Toast.LENGTH_SHORT).show()
 
