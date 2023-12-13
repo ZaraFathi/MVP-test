@@ -29,7 +29,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/back_edit_text"
         android:gravity="start|top"
-        android:hint="@string/text_task"
+        android:hint="@string/hint_task"
         android:inputType="textMultiLine"
         android:padding="8dp"
         android:textColor="@color/text_black"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="@+id/edtTask"
         app:layout_constraintTop_toBottomOf="@+id/edtTask" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

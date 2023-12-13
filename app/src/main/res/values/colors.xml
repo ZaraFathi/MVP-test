@@ -15,8 +15,10 @@
     <color name="colorDarkBlue700">#03062C</color>
     <color name="purple_500">#3B378E</color>
     <color name="purple_700">#3B378E</color>
-    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_200">#460D4F</color>
+    <color name="purple_400">#FF9C27B0</color>
     <color name="main">#3B378E</color>
+    <color name="purple_800">#FF460D4F</color>
     <color name="line">#FF9800</color>
     <color name="white_back">#F0F3FF</color>
 </resources>

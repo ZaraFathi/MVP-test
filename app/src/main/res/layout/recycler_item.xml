@@ -30,7 +30,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/line"
+            android:background="@color/purple_400"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/checkBox"
             app:layout_constraintTop_toTopOf="parent" />
