@@ -3,6 +3,7 @@ package com.example.taskapplearn.db.dao
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.taskapplearn.db.DBHandler
 
 
 @Entity(tableName = DBHandler.TASK_TABLE)

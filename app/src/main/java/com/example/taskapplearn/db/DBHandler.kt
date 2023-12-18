@@ -1,5 +1,4 @@
-
-
+package com.example.taskapplearn.db
 
 import android.content.Context
 import androidx.room.Database
@@ -37,9 +36,6 @@ abstract class DBHandler : RoomDatabase() {
                     .build()
 
             return INSTANCE!!
-
         }
-
     }
-
 }

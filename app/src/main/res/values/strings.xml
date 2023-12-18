@@ -13,6 +13,8 @@
     <string name="hint_task">وظیفه را وارد کنید</string>
     <string name="save">دخیره کردن</string>
     <string name="cancel">کنسل کردن</string>
+    <string name="delete">حذف کردن</string>
+    <string name="are_you_sure">ایا از حذف این ایتم مطمعن هستید؟</string>
 
 
 </resources>

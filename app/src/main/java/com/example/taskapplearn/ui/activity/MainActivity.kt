@@ -14,7 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(view.binding.root)
         presenter=PresenterMainActivity(view,ModelMainActivity(activity = this))
         presenter.onCreate()
-
-
     }
+
+    override fun onDestroy() {
+        presenter.onDestroy()
+        super.onDestroy()
+    }
+
+
+
 }
